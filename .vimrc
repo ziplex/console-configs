@@ -2,16 +2,16 @@ set nocompatible " be iMproved, required
 filetype off " required
 
 "set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle / Bundle.vim
-call vundle#begin()
+"set rtp+=~/.vim/bundle / Bundle.vim
+"call vundle#begin()
 "alternatively, pass a path where Vundle should install plugins
 "call vundle#begin ('~/some/path/here')
 
 "let Vundle manage Vundle, required
-Plugin ' VundleVim/Vundle.vim'
-Plugin 'valloric/youcompleteme'
+"Plugin ' VundleVim/Vundle.vim'
+"Plugin 'valloric/youcompleteme'
 "All of your Plugins must be added before the following line
-call vundle#end() " required
+"call vundle#end() " required
 filetype plugin indent on " required
 "To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -53,13 +53,13 @@ set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 " Mouse support
 set mouse=a
-set mouse model=popup
+"set mouse model=popup
 "Do not unload the buffer when switching to another
 "This allows you to edit multiple files at the same time without having to save each time
 "when you switch between them
 set hidden
 "To hide a panel in the gui version
-set guioptions - =T
+"set guioptions - =T
 "Make a line of commands one line high
 set ch=1
 "Hide mouse pointer when typing
@@ -85,7 +85,7 @@ set showmatch
 "set lines=50
 "set columns=140
 "Navigation with regard to Russian symbols is taken into account by the commands next / previous word, etc.
-set iskeyword=@, 48-57,_, 192-255
+"set iskeyword=@, 48-57,_, 192-255
 "Deleting characters Backspace in Windows
 set backspace=indent,eol,start
 "Highlight the line of text where the cursor is located
@@ -97,8 +97,8 @@ set history=200
 "More information on the status bar
 set wildmenu
 "Customizing the display of special characters
-set list listchars=tab:→\, trail:·
+"set list listchars=tab:→\, trail:·
 "Enabling third-party plugins
 filetype plugin on
 " Color scheme
-colorscheme jellybeans
+"colorscheme jellybeans

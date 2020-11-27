@@ -1,0 +1,10 @@
+[Unit]
+Description=Backup postgres timer
+Requires=pgBackup.service
+
+[Timer]
+Unit=pgBackup.service
+OnCalendar=20:00
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Backups postgres job
+Wants=pgBackup.timer
+
+[Service]
+Type=oneshot
+ExecStart=/root/scripts/pg_dump.sh &
+
+[Install]
+WantedBy=multi-user.target
